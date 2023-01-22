@@ -8,3 +8,4 @@ Popis toho, o co se snažíme.
 
    termomechanika/index
    mechanika_tekutin/index
+   zzz_references
