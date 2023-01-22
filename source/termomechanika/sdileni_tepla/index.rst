@@ -46,7 +46,7 @@ Sdílení tepla prouděním, konvekce, je popsáno *Newtonovým ochlazovacím z�
 
 Konvekce je charakterizována součinitelem přestupu tepla α [W/(m\ :sup:`2` K)]
 Vzhledem ke složitosti závislosti α na širokém spektru parametrů se problematika zpracovává přes podobnostní čísla.
-Přechod z oblasti podobnostních čísel se provádí za pomoci vztahu mezi Nusseltovým číslem a součinitelem přestupu tepla:
+Přechod z oblasti podobnostních čísel se provádí za pomoci vztahu mezi :ref:`Nusseltovým číslem <tm-pod-nu>` a součinitelem přestupu tepla:
 
 .. math:: 
   :label: eq-tm-st-vedeni-alpha
@@ -55,7 +55,7 @@ Přechod z oblasti podobnostních čísel se provádí za pomoci vztahu mezi Nus
 
 
 Volná konvekce je vyvolána teplotními rozdíly v tekutině, které vedou na rozdíly v hustotě, které mají v gravitačním poli za následek pohyb tekutiny.
-Vztlakové a proti nim působící vazké síly charakterizuje Rayleigho číslo.
+Vztlakové a proti nim působící vazké síly charakterizuje :ref:`tm-pod-ra`.
 Nucená konvekce je vyvolána vynuceným prouděním tekutiny.
 Smíšená konvekce se uvažuje, není-li zanedbatelný ani jeden z uvedených typů.
 
