@@ -6,5 +6,5 @@ Termomechanika
 .. toctree::
   :maxdepth: 2
   
-  prestup_tepla/index
+  sdileni_tepla/index
 
