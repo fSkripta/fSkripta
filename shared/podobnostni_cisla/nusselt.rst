@@ -2,5 +2,5 @@ Určuje poměr mezi konvektivním a koduktivním přenosem tepla. Tím popisuje 
 
 .. math::
 
-  \mathrm{Nu} =\frac {\alpha \cdot L}{\lambda }
+  \mathrm{Nu} =\frac {\alpha \ L}{\lambda }
   

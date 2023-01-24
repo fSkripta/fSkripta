@@ -28,7 +28,7 @@ Vedení tepla je popsáno *Fourierovým zákonem* (rce. :math:numref:`eq-tm-st-v
   \dot{q} = - \lambda \nabla T, \ \lambda > 0
 
 Hybnou silou vedení tepla je teplotní gradient.
-Veličinami s blízkým vztahem k tepelné vodivosti  λ [W/(m K)] jsou tepelný odpor R [K/W] a tepelná rezistivita R\ :sub:`λ` [K m/W].
+Veličinami s blízkým vztahem k tepelné vodivosti :math:`\lambda` [W/(m K)] jsou tepelný odpor R [K/W] a tepelná rezistivita :math:`R_\lambda` [K m/W].
 
 
 
@@ -44,8 +44,8 @@ Sdílení tepla prouděním, konvekce, je popsáno *Newtonovým ochlazovacím z�
 
   \dot {Q} = \alpha A (T-T_\infty )= \alpha A \Delta T 
 
-Konvekce je charakterizována součinitelem přestupu tepla α [W/(m\ :sup:`2` K)]
-Vzhledem ke složitosti závislosti α na širokém spektru parametrů se problematika zpracovává přes podobnostní čísla.
+Konvekce je charakterizována součinitelem přestupu tepla :math:`\alpha` [W/(m\ :sup:`2` K)]
+Vzhledem ke složitosti závislosti :math:`\alpha` na širokém spektru parametrů se problematika zpracovává přes podobnostní čísla.
 Přechod z oblasti podobnostních čísel se provádí za pomoci vztahu mezi :ref:`Nusseltovým číslem <tm-pod-nu>` a součinitelem přestupu tepla:
 
 .. math:: 
