@@ -13,7 +13,7 @@ Rozlišujeme tři způsoby sdílení tepla:
 
 Vedení
 ======
-
+ 
 Sdílení tepla vedením se odehrává na mikroskopické úrovni předáváním kinetické energie mezi částicemi.
 Významné je především v pevných látkách, u tekutin bývá většinou zanedbatelné ve srovnání s konvekcí.
 Tuto (ne)zanedbatelnost je možno kvantifikovat pomocí Pécletova čísla. 
