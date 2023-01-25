@@ -60,7 +60,26 @@ Je třeba se rozhodnout. Chcete upravovat již existující příspěvek, nebo v
 
     * Po nahrání následuje commit stejným způsobem, jako je popsáno výše.
 
-[//]: # (doplnit merge request)
+  * Vytvořte, kolik commitů je libo. Až se dostanete do fáze, že budete chtít své snažení publikovat, vytvořte "pull request".
+
+    * V záhlaví svého repozitáře vyberte záložku *Pull requests* a klikněte na tlačítko `New pull request`.
+
+      ![newPR](source/imgs/how_to/L_newPullRequest.png#gh-light-mode-only)
+      ![newPR](source/imgs/how_to/D_newPullRequest.png#gh-dark-mode-only )
+
+    * V dialogu *Comparing changes* správně vyberte, jaké změny a kde chcete provést. Vaše změny se mají propsat do mateřského repozitáře, ne naopak. V tomto okně si také můžete prohlédnout všechny provedené změny.
+
+      ![compareChanges](source/imgs/how_to/L_compareChanges.png#gh-light-mode-only)
+      ![compareChanges](source/imgs/how_to/D_compareChanges.png#gh-dark-mode-only )
+
+    * Tlačítko `Create pull request` vás posune na další stránku, kde okomentujete své změny. Prosím, dovolte nám změny na vaší větvi vybráním `Allow edits by maintainers`.
+
+      ![describePull](source/imgs/how_to/L_describePull.png#gh-light-mode-only)
+      ![describePull](source/imgs/how_to/D_describePull.png#gh-dark-mode-only )
+
+    * Opět použijte tlačítko `Create pull request`. Tím konečně vytvoříte Pull request a můžete se těšit na zveřejnění na fSkripta.github.io. Budeme se snažit vaše změny zpracovat co nejrychleji.
+
+**Pokud si nebudete vědět rady, ozvěte se.**
 
 ### Syntaxe
 
@@ -86,4 +105,18 @@ Pro základní užití by vám mohly stačit příklady v již existujících č
 
 Pokud Vám něco říkají příkazy jako `git clone`, možná byste si chtěli vyzkoušet "zbuildit" fSkripta lokálně a zjistit, jak bude váš příspěvek vypadat ve výsledné verzi.
 
-[//]: # (doplnit build)
+Naklonujte si náš repozitář a v adresáři, který obsahuje soubor `make.bat` zadejte příkaz:
+
+```
+make html
+```
+
+| **Pozn.:** Pracujete-li ve Windows, použijte Command Prompt, ne Power Shell!
+
+Tento příkaz vygeneruje adresář build. Otevřete soubor `build/html/index.html` a prohlédněte si svá lokální fSkripta.
+
+Máte nainstalovaný LaTeX? Vyzkoušejte:
+
+```
+make latexpdf
+```
