@@ -10,4 +10,4 @@ rm -r docs
 mv build/html docs
 touch docs/.nojekyll
 
-rm -r source shared make.bat Makefile 
+rm -r source shared build make.bat Makefile 
