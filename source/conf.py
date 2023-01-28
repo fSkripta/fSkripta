@@ -27,4 +27,7 @@ language = 'cs'
 html_theme = 'alabaster'
 html_static_path = ['_static']
 html_title = 'fSkripta'
-html_favicon = 'imgs/favicon.ico'
+html_favicon = '_static/favicon.ico'
+html_theme_options =  {
+  'page_width': '1200px',
+}
