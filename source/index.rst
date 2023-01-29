@@ -8,4 +8,5 @@ Naší snahou je vytvořit soubor poznámek a příkladů z přednášek a cvič
 
    termomechanika/index
    mechanika_tekutin/index
+   mechanika_kontinua/index
    zzz_references
