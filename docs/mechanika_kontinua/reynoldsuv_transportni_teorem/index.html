@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+
+<html lang="cs">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Reynoldsůsv transportní teorém &#8212; fSkripta</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/alabaster.css" />
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/translations.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Rejstřík" href="../../genindex.html" />
+    <link rel="search" title="Vyhledávání" href="../../search.html" />
+    <link rel="next" title="Literatura" href="../../zzz_references.html" />
+    <link rel="prev" title="Mechanika kontinua" href="../index.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="reynoldsusv-transportni-teorem">
+<span id="km-reynoldsuvtransportniteorem"></span><h1>Reynoldsůsv transportní teorém<a class="headerlink" href="#reynoldsusv-transportni-teorem" title="Permalink to this heading">¶</a></h1>
+<p>Reynoldsův teorém je základní větou a nástrojem v mechanice kontinua a přidružených disciplínách. Používá se pro bilancování veličin či konstrukci zákonů zachování.</p>
+<section id="reynoldsuv-transportni-teorem-zneni">
+<h2>Reynoldsův transportní teorém - znění<a class="headerlink" href="#reynoldsuv-transportni-teorem-zneni" title="Permalink to this heading">¶</a></h2>
+<p>Reynoldsůsv transportní teorém <em>(občas se můžeme setkat i s označením Leibnitzův-Reynoldsůsv teorém, neboť se jedná o rozšíření Lebnitzova integrálního pravidla)</em> dává do souvislosti</p>
+<div class="math notranslate nohighlight" id="equation-mk-rtt">
+<span class="eqno">(1)<a class="headerlink" href="#equation-mk-rtt" title="Permalink to this equation">¶</a></span>\[  \frac{\text{d}}{\text{d}t}\int_\mathcal{V(t)}\phi(t, \mathbf{x}) \text{d}\mathbf{x} =  \int_\mathcal{V(t)} \frac{\partial \phi(t, \mathbf{x}) }{\partial t} + \nabla \cdot ( \phi \mathbf{V}(t, \mathbf{x}) )\text{d}\mathbf{x}\]</div>
+<p>Výše uvedené vztahy lze číst jako „<strong>Celková změna</strong> veličiny <span class="math notranslate nohighlight">\(\phi\)</span> v kontrolním objemu <span class="math notranslate nohighlight">\(\mathcal{V}(t)\)</span> je dána <strong>časovou změnou</strong> veličiny <span class="math notranslate nohighlight">\(\phi\)</span> v kontrolním objemu a <strong>tokem</strong> veličiny <span class="math notranslate nohighlight">\(\phi\)</span> skrze hranici kontrolního objemu.“</p>
+<p>Vztah <a class="reference internal" href="#equation-mk-rtt">(1)</a> lze přepsat pomocí materiálové derivace jako</p>
+<div class="math notranslate nohighlight" id="equation-mk-rtt-materialova-derivace">
+<span class="eqno">(2)<a class="headerlink" href="#equation-mk-rtt-materialova-derivace" title="Permalink to this equation">¶</a></span>\[  \frac{\text{d}}{\text{d}t}\int_\mathcal{V(t)}\phi(t, \mathbf{x}) = \int_\mathcal{V(t)} \frac{\text{D} \phi(t, \mathbf{x}) }{\text{D} t} + \phi (t, \mathbf{x}) \nabla \cdot \mathbf{V}(t, \mathbf{x}) \text{d}\mathbf{x}.\]</div>
+<section id="odvozeni">
+<h3>Odvození<a class="headerlink" href="#odvozeni" title="Permalink to this heading">¶</a></h3>
+<p>Vztah pro hodnotu veličiny v kontrolním objemu <span class="math notranslate nohighlight">\(\mathcal{V}(t)\)</span> pomocí věty o substituci převedeme do referenční konfigurace <span class="math notranslate nohighlight">\(\mathcal{V}_0\)</span>. Tím se ve výrazu objeví jakobián transformace <span class="math notranslate nohighlight">\(| \text{det}\mathbb{F}(t, \mathbf{X})|\)</span> Proměnnou v aktuální konfiguraci <span class="math notranslate nohighlight">\(\phi(t, \mathbf{x})\)</span> následně přepíšeme pomocí jejího vyjádření v referenční konfiguraci <span class="math notranslate nohighlight">\(\phi(t, \mathbf{x}) = \phi(t, \mathbf{x}(t, \mathbf{X})) = \varphi(t, \mathbf{X})\)</span></p>
+<div class="math notranslate nohighlight" id="equation-mk-rtt-odvozeni-part1">
+<span class="eqno">(3)<a class="headerlink" href="#equation-mk-rtt-odvozeni-part1" title="Permalink to this equation">¶</a></span>\[ \begin{align}\begin{aligned}\frac{\text{d}}{\text{d}t}\int_\mathcal{V(t)}\phi(t, \mathbf{x}) &amp;= \frac{\text{d}}{\text{d}t}\int_\mathcal{V_0} \phi(t, \mathbf{x}(t, \mathbf{X})) | \text{det}\mathbb{F}(t, \mathbf{X})|\text{d}\mathbf{X}\\&amp;= \frac{\text{d}}{\text{d}t}\int_\mathcal{V_0} \varphi(t, \mathbf{X}) | \text{det}\mathbb{F}(t, \mathbf{X})|\text{d}\mathbf{X}\end{aligned}\end{align} \]</div>
+<p>Nyní lze bez problémů vtáhnout časovou derivaci dovnitř integrálu, neboť oblast <span class="math notranslate nohighlight">\(\mathcal{V}_0\)</span>, přes kterou probíhá integrace v referenční konfiguraci je konstantní a v čase neměnná. Změna veličiny proto není ovlivněna změnou oblasti.</p>
+<div class="math notranslate nohighlight" id="equation-mk-rtt-odvozeni-part2">
+<span class="eqno">(4)<a class="headerlink" href="#equation-mk-rtt-odvozeni-part2" title="Permalink to this equation">¶</a></span>\[ \begin{align}\begin{aligned}\frac{\text{d}}{\text{d}t}\int_\mathcal{V_0} \varphi(t, \mathbf{X}) | \text{det}\mathbb{F}(t, \mathbf{X})|\text{d}\mathbf{X} &amp;= \int_\mathcal{V_0} \frac{\partial}{\partial t} \left( \varphi(t, \mathbf{X}) | \text{det}\mathbb{F}(t, \mathbf{X})| \right) \text{d}\mathbf{X}\\&amp;= \int_\mathcal{V_0} \frac{\partial \varphi(t, \mathbf{X}) }{\partial t} | \text{det}\mathbb{F}(t, \mathbf{X})|   +  \varphi(t, \mathbf{X})\frac{\partial | \text{det}\mathbb{F}(t, \mathbf{X})| }{\partial t} \text{d}\mathbf{X}.\end{aligned}\end{align} \]</div>
+<p>Dále využijeme vztahu pro časovou derivaci determinantu deformačního gradientu (TODO:ref) <span class="math notranslate nohighlight">\(\partial (\text{det}\mathbb F)/ \partial t = \text{det}\mathbb F \nabla\cdot \mathbf{V}\)</span></p>
+<div class="math notranslate nohighlight" id="equation-mk-rtt-odvozeni-part3">
+<span class="eqno">(5)<a class="headerlink" href="#equation-mk-rtt-odvozeni-part3" title="Permalink to this equation">¶</a></span>\[ \begin{align}\begin{aligned}\int_\mathcal{V_0} \frac{\partial \varphi(t, \mathbf{X}) }{\partial t} | \text{det}\mathbb{F}(t, \mathbf{X})|   +  \varphi(t, \mathbf{X})\frac{\partial | \text{det}\mathbb{F}(t, \mathbf{X})| }{\partial t} \text{d}\mathbf{X}\\= \int_\mathcal{V_0} \left( \frac{\partial \varphi(t, \mathbf{X}) }{\partial t}  +  \varphi(t, \mathbf{X})\nabla\cdot\mathbf{V} \right)| \text{det}\mathbb{F}(t, \mathbf{X})| \text{d}\mathbf{X}.\end{aligned}\end{align} \]</div>
+<p>Nyní se lze začít vracet od referenční konfigurace k aktuální</p>
+<div class="math notranslate nohighlight" id="equation-mk-rtt-odvozeni-part4">
+<span class="eqno">(6)<a class="headerlink" href="#equation-mk-rtt-odvozeni-part4" title="Permalink to this equation">¶</a></span>\[ \begin{align}\begin{aligned}\int_\mathcal{V_0} \left( \frac{\partial \varphi(t, \mathbf{X}) }{\partial t}  +  \varphi(t, \mathbf{X})\nabla\cdot\mathbf{V} \right)| \text{det}\mathbb{F}(t, \mathbf{X})| \text{d}\mathbf{X} &amp;= \int_\mathcal{V_0} \left( \frac{\partial \varphi }{\partial t}  +  \varphi\nabla\cdot\mathbf{V} \right)\bigg|_{(t,  \mathbf{X})} | \text{det}\mathbb{F}(t, \mathbf{X})| \text{d}\mathbf{X}\\&amp;= \int_\mathcal{V_0} \left( \frac{\text{D} \phi }{\text{D} t} + \phi \nabla \cdot \mathbf{V}\right)\bigg|_{(t, \mathbf{x}(t, \mathbf{X}))} | \text{det}\mathbb{F}(t, \mathbf{X})| \text{d}\mathbf{X}\\&amp;= \int_\mathcal{V(t)} \frac{\text{D} \phi(t, \mathbf{x}) }{\text{D} t} + \phi(t, \mathbf{x}) \nabla \cdot \mathbf{V}(t, \mathbf{x}) \text{d}\mathbf{x}\end{aligned}\end{align} \]</div>
+<p>kde jsme na druhém řádku přešli od proměnné v referenční konfiguraci <span class="math notranslate nohighlight">\(\phi\)</span> k proměnné v aktuální konfiguraci <span class="math notranslate nohighlight">\(\varphi\)</span> (povšimněte si změny argumentů) a na třetím řádku jsme provedli přechod zpět od referenční konfiguraci k aktuální konfiguraci.
+Výše uvedený vztah odpovídá rovnici <a class="reference internal" href="#equation-mk-rtt-materialova-derivace">(2)</a>. Vztah <a class="reference internal" href="#equation-mk-rtt">(1)</a> získáme rozepsáním materiálové derivace</p>
+<div class="math notranslate nohighlight" id="equation-mk-rtt-odvozeni-part5">
+<span class="eqno">(7)<a class="headerlink" href="#equation-mk-rtt-odvozeni-part5" title="Permalink to this equation">¶</a></span>\[ \begin{align}\begin{aligned}\frac{\text{d}}{\text{d}t}\int_\mathcal{V(t)}\phi(t, \mathbf{x}) &amp;= \int_\mathcal{V(t)} \frac{\text{D} \phi(t, \mathbf{x}) }{\text{D} t} + \phi(t, \mathbf{x}) \nabla \cdot \mathbf{V}(t, \mathbf{x}) \text{d}\mathbf{x}\\&amp;= \int_\mathcal{V(t)} \left( \frac{\partial \phi }{\text{D} t} + \mathbf{V} \cdot \nabla \phi + \phi \nabla \cdot \mathbf{V} \right) \bigg|_{(t, \mathbf{x})} \text{d}\mathbf{x}\\&amp;= \int_\mathcal{V(t)} \frac{\partial \phi(t, \mathbf{x}) }{\text{D} t} + \nabla\cdot(\phi\mathbf{V}) \text{d}\mathbf{x}\end{aligned}\end{align} \]</div>
+</section>
+<section id="reynoldsuv-transportni-teorem-pro-specificke-veliciny">
+<h3>Reynoldsův transportní teorém pro specifické veličiny<a class="headerlink" href="#reynoldsuv-transportni-teorem-pro-specificke-veliciny" title="Permalink to this heading">¶</a></h3>
+<p>Předpokládejme nyní, že máme specifickou veličinu (vztaženou na jednotku hmotnosti) <span class="math notranslate nohighlight">\(\psi\)</span>, odpovídající veličině <span class="math notranslate nohighlight">\(\phi\)</span>, tak, že <span class="math notranslate nohighlight">\(\phi = \rho\psi\)</span>. Dosazením do rovnice <a class="reference internal" href="#equation-mk-rtt-materialova-derivace">(2)</a> lze psát (pro přehlednost již s vynecháním argumentů)</p>
+<div class="math notranslate nohighlight" id="equation-mk-rttspec-materialova-derivace-odvozeni">
+<span class="eqno">(8)<a class="headerlink" href="#equation-mk-rttspec-materialova-derivace-odvozeni" title="Permalink to this equation">¶</a></span>\[ \begin{align}\begin{aligned}  \frac{\text{d}}{\text{d}t}\int_\mathcal{V(t)}\rho(t, \mathbf{x})\psi(t, \mathbf{x})\text{d}\mathbf{x} &amp;= \int_\mathcal{V(t)} \rho(t, \mathbf{x})\frac{\text{D} \left( \rho \psi \right) }{\text{D} t} + \rho\psi\nabla\cdot\mathbf{V} \text{d}\mathbf{x}.\\&amp;= \int_\mathcal{V(t)} \rho(t, \mathbf{x})\frac{\text{D} \left( \rho \psi \right) }{\text{D} t} + \psi \left(  \frac{\text{D} \rho  }{\text{D} t} +\rho\nabla\cdot\mathbf{V} \right) \text{d}\mathbf{x}.\end{aligned}\end{align} \]</div>
+<p>Poslední člen na pravé straně je díky rovnici kontinuity (TODO: ref) nulový. Získáváme tak Reynoldsův transportní teorém ve formě pro specifickou veličinu</p>
+<div class="math notranslate nohighlight" id="equation-mk-rttspec-materialova-derivace">
+<span class="eqno">(9)<a class="headerlink" href="#equation-mk-rttspec-materialova-derivace" title="Permalink to this equation">¶</a></span>\[  \frac{\text{d}}{\text{d}t}\int_\mathcal{V(t)}\rho(t, \mathbf{x})\psi(t, \mathbf{x})\text{d}\mathbf{x} = \int_\mathcal{V(t)} \rho(t, \mathbf{x})\frac{\text{D} \psi(t, \mathbf{x}) }{\text{D} t} \text{d}\mathbf{x}.\]</div>
+</section>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">fSkripta</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigace</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../termomechanika/index.html">Termomechanika</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mechanika_tekutin/index.html">Mechanika tekutin</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Mechanika kontinua</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Reynoldsůsv transportní teorém</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../zzz_references.html">Literatura</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html">Mechanika kontinua</a><ul>
+      <li>Previous: <a href="../index.html" title="předchozí kapitola">Mechanika kontinua</a></li>
+      <li>Next: <a href="../../zzz_references.html" title="další kapitola">Literatura</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Rychlé vyhledávání</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="OK" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, fSkripta.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="../../_sources/mechanika_kontinua/reynoldsuv_transportni_teorem/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
