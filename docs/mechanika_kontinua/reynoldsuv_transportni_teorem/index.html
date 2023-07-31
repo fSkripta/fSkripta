@@ -4,7 +4,7 @@
 <html lang="cs">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>Reynoldsůsv transportní teorém &#8212; fSkripta</title>
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
@@ -20,7 +20,7 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Rejstřík" href="../../genindex.html" />
     <link rel="search" title="Vyhledávání" href="../../search.html" />
-    <link rel="next" title="Literatura" href="../../zzz_references.html" />
+    <link rel="next" title="Mechanika tekutin" href="../../mechanika_tekutin/index.html" />
     <link rel="prev" title="Mechanika kontinua" href="../index.html" />
    
   <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
@@ -58,7 +58,7 @@
 <p>Nyní lze bez problémů vtáhnout časovou derivaci dovnitř integrálu, neboť oblast <span class="math notranslate nohighlight">\(\mathcal{V}_0\)</span>, přes kterou probíhá integrace v referenční konfiguraci je konstantní a v čase neměnná. Změna veličiny proto není ovlivněna změnou oblasti.</p>
 <div class="math notranslate nohighlight" id="equation-mk-rtt-odvozeni-part2">
 <span class="eqno">(4)<a class="headerlink" href="#equation-mk-rtt-odvozeni-part2" title="Permalink to this equation">¶</a></span>\[ \begin{align}\begin{aligned}\frac{\text{d}}{\text{d}t}\int_\mathcal{V_0} \varphi(t, \mathbf{X}) | \text{det}\mathbb{F}(t, \mathbf{X})|\text{d}\mathbf{X} &amp;= \int_\mathcal{V_0} \frac{\partial}{\partial t} \left( \varphi(t, \mathbf{X}) | \text{det}\mathbb{F}(t, \mathbf{X})| \right) \text{d}\mathbf{X}\\&amp;= \int_\mathcal{V_0} \frac{\partial \varphi(t, \mathbf{X}) }{\partial t} | \text{det}\mathbb{F}(t, \mathbf{X})|   +  \varphi(t, \mathbf{X})\frac{\partial | \text{det}\mathbb{F}(t, \mathbf{X})| }{\partial t} \text{d}\mathbf{X}.\end{aligned}\end{align} \]</div>
-<p>Dále využijeme vztahu pro časovou derivaci determinantu deformačního gradientu (TODO:ref) <span class="math notranslate nohighlight">\(\partial (\text{det}\mathbb F)/ \partial t = \text{det}\mathbb F \nabla\cdot \mathbf{V}\)</span></p>
+<p>Dále využijeme vztahu pro časovou derivaci determinantu deformačního gradientu (TODO:ref) <span class="math notranslate nohighlight">\(^{\partial (\text{det}\mathbb F)} \! / _{\partial t} = \text{det}\mathbb F \nabla\cdot \mathbf{V}\)</span></p>
 <div class="math notranslate nohighlight" id="equation-mk-rtt-odvozeni-part3">
 <span class="eqno">(5)<a class="headerlink" href="#equation-mk-rtt-odvozeni-part3" title="Permalink to this equation">¶</a></span>\[ \begin{align}\begin{aligned}\int_\mathcal{V_0} \frac{\partial \varphi(t, \mathbf{X}) }{\partial t} | \text{det}\mathbb{F}(t, \mathbf{X})|   +  \varphi(t, \mathbf{X})\frac{\partial | \text{det}\mathbb{F}(t, \mathbf{X})| }{\partial t} \text{d}\mathbf{X}\\= \int_\mathcal{V_0} \left( \frac{\partial \varphi(t, \mathbf{X}) }{\partial t}  +  \varphi(t, \mathbf{X})\nabla\cdot\mathbf{V} \right)| \text{det}\mathbb{F}(t, \mathbf{X})| \text{d}\mathbf{X}.\end{aligned}\end{align} \]</div>
 <p>Nyní se lze začít vracet od referenční konfigurace k aktuální</p>
@@ -99,12 +99,14 @@ Výše uvedený vztah odpovídá rovnici <a class="reference internal" href="#eq
 
 <h3>Navigace</h3>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../termomechanika/index.html">Termomechanika</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../mechanika_tekutin/index.html">Mechanika tekutin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dynamika_plynu/index.html">Dynamika plynů</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">Mechanika kontinua</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Reynoldsůsv transportní teorém</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../mechanika_tekutin/index.html">Mechanika tekutin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../termomechanika/index.html">Termomechanika</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary.html">Použité symboly</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../zzz_references.html">Literatura</a></li>
 </ul>
 
@@ -114,7 +116,7 @@ Výše uvedený vztah odpovídá rovnici <a class="reference internal" href="#eq
   <li><a href="../../index.html">Documentation overview</a><ul>
   <li><a href="../index.html">Mechanika kontinua</a><ul>
       <li>Previous: <a href="../index.html" title="předchozí kapitola">Mechanika kontinua</a></li>
-      <li>Next: <a href="../../zzz_references.html" title="další kapitola">Literatura</a></li>
+      <li>Next: <a href="../../mechanika_tekutin/index.html" title="další kapitola">Mechanika tekutin</a></li>
   </ul></li>
   </ul></li>
 </ul>
@@ -145,8 +147,8 @@ Výše uvedený vztah odpovídá rovnici <a class="reference internal" href="#eq
       &copy;2023, fSkripta.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.2.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
       <a href="../../_sources/mechanika_kontinua/reynoldsuv_transportni_teorem/index.rst.txt"

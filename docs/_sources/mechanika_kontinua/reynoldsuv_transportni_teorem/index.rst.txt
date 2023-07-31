@@ -46,7 +46,7 @@ Nyní lze bez problémů vtáhnout časovou derivaci dovnitř integrálu, neboť
 
   &= \int_\mathcal{V_0} \frac{\partial \varphi(t, \mathbf{X}) }{\partial t} | \text{det}\mathbb{F}(t, \mathbf{X})|   +  \varphi(t, \mathbf{X})\frac{\partial | \text{det}\mathbb{F}(t, \mathbf{X})| }{\partial t} \text{d}\mathbf{X}.
 
-Dále využijeme vztahu pro časovou derivaci determinantu deformačního gradientu (TODO:ref) :math:`\partial (\text{det}\mathbb F)/ \partial t = \text{det}\mathbb F \nabla\cdot \mathbf{V}`
+Dále využijeme vztahu pro časovou derivaci determinantu deformačního gradientu (TODO:ref) :math:`^{\partial (\text{det}\mathbb F)} \! / _{\partial t} = \text{det}\mathbb F \nabla\cdot \mathbf{V}`
 
 .. math::
   :label: mk_rtt_odvozeni_part3

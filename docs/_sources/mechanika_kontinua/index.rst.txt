@@ -1,4 +1,4 @@
-.. _mechanika_kontinua:
+.. _mechanika-kontinua:
 
 Mechanika kontinua
 ##################

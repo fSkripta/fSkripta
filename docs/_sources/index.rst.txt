@@ -6,7 +6,9 @@ Naší snahou je vytvořit soubor poznámek a příkladů z přednášek a cvič
 .. toctree::
    :maxdepth: 2
 
-   termomechanika/index
-   mechanika_tekutin/index
+   dynamika_plynu/index
    mechanika_kontinua/index
+   mechanika_tekutin/index
+   termomechanika/index
+   glossary
    zzz_references

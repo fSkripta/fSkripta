@@ -46,7 +46,7 @@ Sdílení tepla prouděním, konvekce, je popsáno *Newtonovým ochlazovacím z�
 
 Konvekce je charakterizována součinitelem přestupu tepla :math:`\alpha` [W/(m\ :sup:`2` K)]
 Vzhledem ke složitosti závislosti :math:`\alpha` na širokém spektru parametrů se problematika zpracovává přes podobnostní čísla.
-Přechod z oblasti podobnostních čísel se provádí za pomoci vztahu mezi :ref:`Nusseltovým číslem <tm-pod-nu>` a součinitelem přestupu tepla:
+Přechod z oblasti podobnostních čísel se provádí za pomoci vztahu mezi :term:`Nusseltovým číslem (Nu) <Nu>` a součinitelem přestupu tepla:
 
 .. math:: 
   :label: eq-tm-st-vedeni-alpha
@@ -55,7 +55,7 @@ Přechod z oblasti podobnostních čísel se provádí za pomoci vztahu mezi :re
 
 
 Volná konvekce je vyvolána teplotními rozdíly v tekutině, které vedou na rozdíly v hustotě, které mají v gravitačním poli za následek pohyb tekutiny.
-Vztlakové a proti nim působící vazké síly charakterizuje :ref:`tm-pod-ra`.
+Vztlakové a proti nim působící vazké síly charakterizuje :term:`Rayleigho číslo (Ra)<Ra>`.
 Nucená konvekce je vyvolána vynuceným prouděním tekutiny.
 Smíšená konvekce se uvažuje, není-li zanedbatelný ani jeden z uvedených typů.
 
@@ -75,5 +75,5 @@ Těleso o teplotě T emituje svým povrchem do okolí teplo:
 .. admonition:: Zdroje
 
   Užitečným zdrojem pro studium jsou např. skripta :cite:p:`nozicka_zaklady_2001`.
-  Části kapitoly jsou doslovnými citacemi diplomové práce :cite:p:`kreuzova_model_2022` autorky této kapitoly. 
+  Části kapitoly jsou doslovnými citacemi diplomové práce :cite:p:`kreuzova_model_2022`. 
   

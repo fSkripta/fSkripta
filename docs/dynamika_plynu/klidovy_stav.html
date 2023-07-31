@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+
+<html lang="cs">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Klidový (stagnační) stav &#8212; fSkripta</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Rejstřík" href="../genindex.html" />
+    <link rel="search" title="Vyhledávání" href="../search.html" />
+    <link rel="next" title="Mechanika kontinua" href="../mechanika_kontinua/index.html" />
+    <link rel="prev" title="Dynamika plynů" href="index.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="klidovy-stagnacni-stav">
+<span id="dp-klidovystav"></span><h1>Klidový (stagnační) stav<a class="headerlink" href="#klidovy-stagnacni-stav" title="Permalink to this heading">¶</a></h1>
+<p>Předpokládejme idealizované adiabatické proudění (není sdíleno teplo s okolím) bez konání technické práce.
+V tom případě může energie nabývat pouze forem entalpie <a class="reference internal" href="../glossary.html#term-h"><span class="xref std std-term">h</span></a> a kinetické energie.</p>
+<div class="math notranslate nohighlight" id="equation-eq-dp-klidovystav-ene">
+<span class="eqno">(1)<a class="headerlink" href="#equation-eq-dp-klidovystav-ene" title="Permalink to this equation">¶</a></span>\[h + \frac{c^2}{2} = \mathrm{konst.}\]</div>
+<p>Stav s nulovou rychlostí proudění <a class="reference internal" href="../glossary.html#term-c"><span class="xref std std-term">c</span></a>, v němž entalpie nabývá maximální hodnoty (<span class="math notranslate nohighlight">\(h_0\)</span>) budeme nazývat stagnační (klidový).
+Hodnoty veličin náležející tomuto stavu opatřujeme indexem <span class="math notranslate nohighlight">\(_0\)</span> (<span class="math notranslate nohighlight">\(h_0,\ p_0,\ T_0,\ \rho_0,\ ...\)</span>).</p>
+<p>Pro celou soustavu, v níž lze proudění považovat za isoentropické, existuje jeden klidový stav.
+Klidová teplota, tlak a entalpie jsou maximálními dosažitelnými hodnotami těchto veličin v dané soustavě.</p>
+<p>S předpokladem ideálního plynu lze rovnici <a class="reference internal" href="#equation-eq-dp-klidovystav-ene">(1)</a> upravit následovně:</p>
+<div class="math notranslate nohighlight" id="equation-eq-dp-klidovystav-ene-idplyn">
+<span class="eqno">(2)<a class="headerlink" href="#equation-eq-dp-klidovystav-ene-idplyn" title="Permalink to this equation">¶</a></span>\[T + \frac{c^2}{2 c_p} = T_0\]</div>
+<p>Člen <span class="math notranslate nohighlight">\(^{c^2}\! /_{2 c_p}\)</span> označujeme jako <strong>dynamickou teplotu</strong>. O jeho hodnotu se zvýší teplota média, je-li z rychlosti <span class="math notranslate nohighlight">\(c\)</span> isoentropicky uvedeno do klidu.</p>
+<div class="admonition note">
+<p class="admonition-title">Poznámka</p>
+<p>Zbrždění nabíhajícího média je nezanedbatelným mechanismem ohřevu těles mj. při vstupu do atmosféry.</p>
+</div>
+<p>S využitím Saint-Venant - Wantzelovy rovnice lze - pro isoentropické proudění - vyjádřit vztah mezi místními a stagnačními hodnotami veličin:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+  \frac{T}{T_0}       &amp; =        \frac{2}{Ma^2 (\kappa - 1) +2}\\
+  \frac{p}{p_0}       &amp; = \left[ \frac{2}{Ma^2 (\kappa - 1) +2} \right]^{\frac{\kappa}{\kappa-1}}\\
+  \frac{\rho}{\rho_0} &amp; = \left[ \frac{2}{Ma^2 (\kappa - 1) +2} \right]^{\frac{     1}{\kappa-1}}
+\end{align}\end{split}\]</div>
+<div class="admonition-zdroje admonition">
+<p class="admonition-title">Zdroje</p>
+<p>Jako zdroj informací pro tuto kapitolu byla využita skripta <span id="id1">[<a class="reference internal" href="../zzz_references.html#id4" title="Jiří Nožička. Dynamika plynů. Česká technika - nakladatelství ČVUT, vyd. 1 edition, 2005. ISBN 978-80-01-03300-5.">3</a>]</span>.</p>
+</div>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">fSkripta</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigace</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Dynamika plynů</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Klidový (stagnační) stav</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../mechanika_kontinua/index.html">Mechanika kontinua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mechanika_tekutin/index.html">Mechanika tekutin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../termomechanika/index.html">Termomechanika</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Použité symboly</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../zzz_references.html">Literatura</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="index.html">Dynamika plynů</a><ul>
+      <li>Previous: <a href="index.html" title="předchozí kapitola">Dynamika plynů</a></li>
+      <li>Next: <a href="../mechanika_kontinua/index.html" title="další kapitola">Mechanika kontinua</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Rychlé vyhledávání</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="OK" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, fSkripta.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.2.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/dynamika_plynu/klidovy_stav.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

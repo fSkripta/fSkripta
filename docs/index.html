@@ -4,7 +4,7 @@
 <html lang="cs">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>fSkripta &#8212; fSkripta</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
@@ -19,7 +19,7 @@
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Rejstřík" href="genindex.html" />
     <link rel="search" title="Vyhledávání" href="search.html" />
-    <link rel="next" title="Termomechanika" href="termomechanika/index.html" />
+    <link rel="next" title="Dynamika plynů" href="dynamika_plynu/index.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -41,16 +41,20 @@
 <p>Naší snahou je vytvořit soubor poznámek a příkladů z přednášek a cvičení <a class="reference external" href="https://fs.cvut.cz">FS ČVUT</a>, který může každý opravovat či rozšiřovat. Tento formát je silně motivován <a class="reference external" href="https://www.wikiskripta.eu/w/Home">lékařskými WikiSkripty</a> a <a class="reference external" href="http://wikiskripta.fjfi.cvut.cz/wiki/index.php/Hlavn%C3%AD_strana">WikiSkripty FJFI</a>, věčnými připomínkami o absenci ucelených materiálů a tím, že si spoustu studentů během studia některé poznámky kvalitně zpracuje a mohlo by být přínosné dát tyto materiály dohromady. Je zvolen tak, aby byl po vzoru <a class="reference external" href="https://cs.wikipedia.org/wiki/Hlavn%C3%AD_strana">Wikipedie</a> modulární, mezi jednotlivými tématy a pojmy šlo snadno přecházet a aby bylo možné doplňovat například jen malé části a vytvářet sekce pro nová témata a předměty. Vybrané pasáže je však zároveň možné vyexportovat jako souvislý text k tisku.</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="termomechanika/index.html">Termomechanika</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="termomechanika/sdileni_tepla/index.html">Sdílení tepla</a></li>
-<li class="toctree-l2"><a class="reference internal" href="termomechanika/podobnost_v_tm/index.html">Podobnost v termomechanice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamika_plynu/index.html">Dynamika plynů</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="dynamika_plynu/klidovy_stav.html">Klidový (stagnační) stav</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="mechanika_tekutin/index.html">Mechanika tekutin</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mechanika_kontinua/index.html">Mechanika kontinua</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="mechanika_kontinua/reynoldsuv_transportni_teorem/index.html">Reynoldsůsv transportní teorém</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="mechanika_tekutin/index.html">Mechanika tekutin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="termomechanika/index.html">Termomechanika</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="termomechanika/sdileni_tepla/index.html">Sdílení tepla</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Použité symboly</a></li>
 <li class="toctree-l1"><a class="reference internal" href="zzz_references.html">Literatura</a></li>
 </ul>
 </div>
@@ -74,9 +78,11 @@
 
 <h3>Navigace</h3>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="termomechanika/index.html">Termomechanika</a></li>
-<li class="toctree-l1"><a class="reference internal" href="mechanika_tekutin/index.html">Mechanika tekutin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamika_plynu/index.html">Dynamika plynů</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mechanika_kontinua/index.html">Mechanika kontinua</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mechanika_tekutin/index.html">Mechanika tekutin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="termomechanika/index.html">Termomechanika</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Použité symboly</a></li>
 <li class="toctree-l1"><a class="reference internal" href="zzz_references.html">Literatura</a></li>
 </ul>
 
@@ -84,7 +90,7 @@
 <h3>Related Topics</h3>
 <ul>
   <li><a href="#">Documentation overview</a><ul>
-      <li>Next: <a href="termomechanika/index.html" title="další kapitola">Termomechanika</a></li>
+      <li>Next: <a href="dynamika_plynu/index.html" title="další kapitola">Dynamika plynů</a></li>
   </ul></li>
 </ul>
 </div>
@@ -114,8 +120,8 @@
       &copy;2023, fSkripta.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.2.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
       <a href="_sources/index.rst.txt"
