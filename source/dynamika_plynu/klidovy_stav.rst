@@ -33,9 +33,9 @@ S využitím Saint-Venant - Wantzelovy rovnice lze - pro isoentropické prouděn
 .. math::
 
   \begin{align}
-    \frac{T}{T_0}       & =        \frac{2}{Ma^2 (\kappa - 1) +2}\\
-    \frac{p}{p_0}       & = \left[ \frac{2}{Ma^2 (\kappa - 1) +2} \right]^{\frac{\kappa}{\kappa-1}}\\
-    \frac{\rho}{\rho_0} & = \left[ \frac{2}{Ma^2 (\kappa - 1) +2} \right]^{\frac{     1}{\kappa-1}}
+    \frac{T}{T_0}       & =        \frac{2}{\mathrm{Ma}^2 (\kappa - 1) +2}\\
+    \frac{p}{p_0}       & = \left[ \frac{2}{\mathrm{Ma}^2 (\kappa - 1) +2} \right]^{\frac{\kappa}{\kappa-1}}\\
+    \frac{\rho}{\rho_0} & = \left[ \frac{2}{\mathrm{Ma}^2 (\kappa - 1) +2} \right]^{\frac{     1}{\kappa-1}}
   \end{align}
 
 .. admonition:: Zdroje
