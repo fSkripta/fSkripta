@@ -32,9 +32,9 @@ jobs:
 
       - name: Commit and Push To Github Pages
         run: |
-          git checkout -B gh-pages
-          git pull origin gh-pages
-          ./make
+          git checkout gh-pages
+          chmod +x make
+          TZ=UTC ./make
           git add docs/*
           git commit -m "Update webpage." || true  # Allow commit if there are no changes
           git push -f origin gh-pages
