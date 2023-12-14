@@ -32,7 +32,6 @@ jobs:
 
       - name: Commit Changes To Github Pages
         run: |
-          git checkout gh-pages
           git clone https://github.com/fSkripta/fskripta.github.io.git --branch gh-pages --single-branch gh-pages
           cd gh-pages
           chmod +x make
