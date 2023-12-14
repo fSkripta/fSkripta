@@ -27,14 +27,21 @@ jobs:
 
       - name: Configure Git
         run: |
-          git config user.email "actions@github.com"
-          git config user.name "GitHub Actions"
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
 
-      - name: Commit and Push To Github Pages
+      - name: Commit Changes To Github Pages
         run: |
           git checkout gh-pages
+          git clone https://github.com/fSkripta/fskripta.github.io.git --branch gh-pages --single-branch gh-pages
+          cd gh-pages
           chmod +x make
           TZ=UTC ./make
           git add docs/*
           git commit -m "Update webpage." || true  # Allow commit if there are no changes
-          git push -f origin gh-pages
+      - name: Commit Changes To Github Pages
+        uses: ad-m/github-push-action@master
+        with:
+          branch: gh-pages
+          directory: gh-pages
+          github_token: ${{ secrets.GITHUB_TOKEN }
