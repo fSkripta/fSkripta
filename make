@@ -10,4 +10,4 @@ rm -r docs
 mv build/html docs
 touch docs/.nojekyll
 
-rm -r source shared build make.bat Makefile 
+rm -r -f source shared build make.bat Makefile #add -f to ignore if file doesn't exist
