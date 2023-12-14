@@ -32,7 +32,8 @@ jobs:
 
       - name: Commit and Push To Github Pages
         run: |
-          git checkout gh-pages
+          git checkout -B gh-pages
+          git pull origin gh-pages
           ./make
           git add docs/*
           git commit -m "Update webpage." || true  # Allow commit if there are no changes
